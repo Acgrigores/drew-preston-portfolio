@@ -4,39 +4,37 @@ An interactive, skeuomorphic portfolio website designed for **Drew Preston**, an
 
 ---
 
-## 📁 Project Overview
-- **Location:** `C:\Users\acgri\.gemini\antigravity\scratch\drew-preston-portfolio`
-- **Files:**
-  - `index.html`: Desktop tabletop scene, binder cover, interior dossier, 3-ring binder spine, primary stationery sheet, and spilled exhibit sheet.
-  - `style.css`: Rich walnut wood desk grain, navy leather binder texture, gold foil typography, multicolor tabs, 3D page turns, and spilled paper physics.
-  - `script.js`: State management, binder opening/closing, tab switching, binder body click cycling, spilled paper trigger, and procedural Web Audio page-flip synthesis.
+## 🚀 Live Demo & Repository
+- **Live Website:** [https://acgrigores.github.io/drew-preston-portfolio/](https://acgrigores.github.io/drew-preston-portfolio/)
+- **GitHub Repository:** [https://github.com/Acgrigores/drew-preston-portfolio](https://github.com/Acgrigores/drew-preston-portfolio)
 
 ---
 
-## ✨ Features & User Experience
-1. **Top View Tabletop:** Opens to a top-down view of a classic collegiate leather binder resting on a mahogany desk with a fountain pen, brass paperclips, and an Aristotle legal quote sticky note.
-2. **Cover Typography:** Embossed gold foil lettering with:
-   - **Drew Preston**
-   - **Economics and Legal Studies at UIUC**
-3. **Multicolor Side Divider Tabs:** 5 indexed tabs protruding from the binder edge:
-   - 🔴 **Academics** (Crimson / Law Burgundy)
-   - 🟢 **Extracurriculars** (Forest Emerald)
-   - 🔵 **Experience** (Admiralty Navy)
-   - 🟠 **Projects** (Terracotta Bronze)
-   - 🟡 **Awards** (UIUC Amber / Gold)
-4. **Clicking Any Tab:** Opens the binder to reveal the two-page interior spread (Candidate dossier on the left; 3-ring metal mechanism in the middle; crisp legal stationery on the right).
-5. **Clicking the Binder Body (Not Tabs):** Smoothly cycles forward through the 5 section tabs with 3D page flip animation and paper rustle audio.
-6. **Spilling Paper Extension:** When additional casework room is needed, clicking **"Spill Out Addendum Sheet (Page 2)"** smoothly drops an exhibit addendum sheet down from the bottom of the binder onto the wooden desk.
-7. **Offline Web Audio:** Realistic page flips, tab clicks, and leather binder closure sounds generated entirely in-browser via the Web Audio API (no external MP3 dependencies; includes mute button).
-8. **Keyboard Navigation:** Use `ArrowRight`/`ArrowLeft` or `Space` to cycle tabs, and `Escape` to fold spilled papers or close the binder.
+## ✏️ Managing & Updating Content (Non-Technical Friendly)
+All the website's content—personal bio, GPA, contact info, job experience, research projects, awards, and addendum notes—is stored in a single easy-to-edit file:
+👉 **[`portfolio-data.json`](./portfolio-data.json)**
+
+For a complete step-by-step walkthrough, see:
+📖 **[`HOW_TO_UPDATE.md`](./HOW_TO_UPDATE.md)**
 
 ---
 
-## 🚀 How to Open and View
-1. Open `C:\Users\acgri\.gemini\antigravity\scratch\drew-preston-portfolio\index.html` in any modern web browser (Chrome, Edge, Firefox, Safari).
-2. Or start a quick local server:
-   ```bash
-   cd "C:\Users\acgri\.gemini\antigravity\scratch\drew-preston-portfolio"
-   python -m http.server 8000
-   ```
-   Then navigate to `http://localhost:8000`.
+## 📁 Project Structure
+- **`portfolio-data.json`**: Central content data file (edit this to update the site!).
+- **`HOW_TO_UPDATE.md`**: Friendly guide for non-technical managers.
+- **`index.html`**: Desktop tabletop scene, binder spread, dossier pocket, and paper mount.
+- **`style.css`**: Walnut wood tabletop with natural scroll tracking, photorealistic leather cover styling, 134px divider tabs with clear text breathing room, and 3D paper transitions.
+- **`script.js`**: Dynamic JSON data binding, automatic paper spill-out, tab switching, and audio synthesis.
+- **`binder-cover.jpg`**: Photorealistic navy buckram leather cover with embossed gold lettering and brass corner brackets.
+- **`wood-table.jpg`**: Realistic walnut desk tabletop background.
+- **`pen.png`**: High-resolution luxury fountain pen accessory.
+- **`favicon.png` / `favicon.ico`**: Fountain pen browser tab icons.
+
+---
+
+## 💻 Local Preview
+To preview locally:
+```bash
+python -m http.server 8000
+```
+Then visit `http://localhost:8000`.
